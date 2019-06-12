@@ -4,12 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] - 2019-06-12
+
+### Fixed
+
+- Added `smoothscroll-anchor-polyfill@^1.3.0` as `peerDependency` instead of just mentioning it in the changelog
+
 ## [2.0.0] - 2019-06-11
 
 ### Added
 
 - The plugin now supports [browserslist](https://github.com/browserslist/browserslist) to polyfill only what's needed! If your project has a browserslist config and all browsers specified there support CSS Custom Property, the PostCSS transform will use a CSS variable instead of the `font-family` workaround. 💡  
-Requires [smoothscroll-anchor-polyfill](https://github.com/jonaskuske/smoothscroll-anchor-polyfill) v1.3.0 or higher.
+- **BREAKING:** Requires [smoothscroll-anchor-polyfill](https://github.com/jonaskuske/smoothscroll-anchor-polyfill) v1.3.0 or higher.
 
 ## [1.0.0] - 2018-12-07
 
