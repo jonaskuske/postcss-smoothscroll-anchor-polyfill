@@ -66,7 +66,7 @@ var runTransform = function (css, opts) {
             } else {
                 existingFont.replaceWith(fontProps);
             }
-        } else {
+        } else if (scrollBehavior !== 'inherit') {
             decl.cloneBefore(fontProps);
         }
     });
